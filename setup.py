@@ -37,7 +37,7 @@ The full documentation can be generated with Sphinx"""
 
 history = open('HISTORY.rst').read().replace('.. :changelog:', '')
 
-requires = ["ivy", "hope", "numpy", "scipy", "healpy", "h5py", "astropy<=1.0.1", "pyephem"]
+requires = ["ivy", "hope", "numpy", "scipy", "healpy", "h5py", "astropy", "pyephem"]
 tests_require=['pytest>=2.3', "mock"]
 
 PACKAGE_PATH = os.path.abspath(os.path.join(__file__, os.pardir))
@@ -69,10 +69,7 @@ setup(
         'License :: Other/Proprietary License',
         'Natural Language :: English',
         'Programming Language :: Python :: 2',
-        'Programming Language :: Python :: 2.6',
         'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.3',
     ],
     tests_require=tests_require,
     cmdclass = {'test': PyTest},

@@ -6,4 +6,6 @@ six
 h5py
 mock
 pyephem
+healpy
+astropy
 git+https://github.com/cosmo-ethz/ivy.git
