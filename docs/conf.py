@@ -22,6 +22,12 @@ cwd = os.getcwd()
 parent = os.path.dirname(cwd)
 sys.path.insert(0, parent)
 
+import mock
+ 
+MOCK_MODULES = ['healpy']
+for mod_name in MOCK_MODULES:
+    sys.modules[mod_name] = mock.Mock()
+
 import hide
 
 # -- General configuration -----------------------------------------------------
