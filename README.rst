@@ -8,6 +8,10 @@ HIDE: Hydrogen (HI) Data Emulator
 .. image:: https://coveralls.io/repos/cosmo-ethz/hide/badge.svg
   		:target: https://coveralls.io/r/cosmo-ethz/hide
 
+.. image:: https://readthedocs.org/projects/hide/badge/?version=latest
+		:target: http://hide.readthedocs.io/en/latest/?badge=latest
+		:alt: Documentation Status
+		
 .. image:: http://img.shields.io/badge/arXiv-1212.1721-orange.svg?style=flat
         :target: http://arxiv.org/abs/1212.1721
 
