@@ -21,6 +21,7 @@ class TestEarthSignalPlugin(object):
         ctx = Struct(params = params,
                      )
         
+        earth_signal.earth_signal = None
         plugin = earth_signal.Plugin(ctx)
         plugin()
         
