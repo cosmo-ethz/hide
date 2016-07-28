@@ -12,8 +12,8 @@ HIDE: Hydrogen (HI) Data Emulator
 		:target: http://hide.readthedocs.io/en/latest/?badge=latest
 		:alt: Documentation Status
 		
-.. image:: http://img.shields.io/badge/arXiv-1212.1721-orange.svg?style=flat
-        :target: http://arxiv.org/abs/1212.1721
+.. image:: http://img.shields.io/badge/arXiv-1607.07443-orange.svg?style=flat
+        :target: http://arxiv.org/abs/1607.07443
 
 **HIDE** is a package for simulating of a single dish radio telescope survey. As such, it takes *healpix* maps as inputs and processes them into TOD. The design is flexible and can be customized to different instruments and survey designs.
 
