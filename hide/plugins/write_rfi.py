@@ -49,7 +49,13 @@ def write_data(ctx, rfi_key, rfi_name):
             raise IOError("File '%s' doesn't exist, write TOD first!"%file_path)
         with h5py.File(file_path, 'r+') as hdf_file:
             grp = hdf_file.create_group(rfi_name)
-            p0_p = ctx[rfi_key.format(pol=pol[-1].lower())]
+            
+            if rfi_key.format(pol=pol[-1].lower()) in ctx.keys():
+                p0_p = ctx[rfi_key.format(pol=pol[-1].lower())]
+            else:
+                print("No RFI data to be written. Will fill with zeros.")
+                p0_p = zeros((276,150))
+                
             # Second phase is only zeros
             p1_p = zeros(p0_p.shape)
             add_dataset(grp, H5_PHASE0_NAME, p0_p)

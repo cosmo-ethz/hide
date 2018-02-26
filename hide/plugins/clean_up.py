@@ -32,6 +32,12 @@ class Plugin(BasePlugin):
         del self.ctx.frequencies
         del self.ctx.strategy_coords
         del self.ctx.beams
+        
+        try:
+            self.ctx.tod_vx_rfi
+        except AttributeError:
+            self.ctx.tod_vx_rfi = None
+            
         del self.ctx.tod_vx_rfi 
         
     def __str__(self):
